@@ -62,3 +62,4 @@ function Expenses() {
     </Container>
   );
 }
+export default Expenses;
