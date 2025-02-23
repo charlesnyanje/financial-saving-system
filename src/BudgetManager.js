@@ -311,3 +311,4 @@ function BudgetManager() {
     </Container>
   );
 }
+export default BudgetManager;
