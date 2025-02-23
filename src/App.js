@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 import BudgetManager from "./BudgetManager";
 import Expenses from "./Expenses";
 import ExpenseDetails from "./ExpenseDetails";
-import SignUp from "./Signup";
+import SignUp from "./SignUp";
 import Login from "./Login";
 import ForgotPassword from "./ForgotPassword";
 
