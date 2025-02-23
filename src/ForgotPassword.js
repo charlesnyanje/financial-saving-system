@@ -116,3 +116,5 @@ function ForgotPassword() {
     </Container>
   );
 }
+
+export default ForgotPassword;
