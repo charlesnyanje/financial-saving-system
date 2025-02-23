@@ -1,58 +1,13 @@
-import React, { useState, useEffect } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Link,
-  useNavigate,
-  useParams,
-  useLocation,
-} from "react-router-dom";
-import {
-  Container,
-  Select,
-  MenuItem,
-  Card,
-  Box,
-  Chip,
-  CardContent,
-  Typography,
-  TextField,
-  Button,
-  List,
-  ListItem,
-  IconButton,
-  ListItemText,
-  Grid,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
-  Paper,
-  Dialog,
-  DialogTitle,
-  DialogContent,
-  DialogActions,
-} from "@mui/material";
-import { Delete as DeleteIcon, Edit } from "@mui/icons-material";
-import axios from "axios";
-import {
-  PieChart,
-  Pie,
-  Cell,
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  Tooltip,
-  Legend,
-  LabelList,
-  ResponsiveContainer,
-} from "recharts";
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./Home";
 import Navbar from "./Navbar";
-const priorities = ["High", "Medium", "Low"];
+import BudgetManager from "./BudgetManager";
+import Expenses from "./Expenses";
+import ExpenseDetails from "./ExpenseDetails";
+import SignUp from "./Signup";
+import Login from "./Login";
+import ForgotPassword from "./ForgotPassword";
 
 function App() {
   return (
