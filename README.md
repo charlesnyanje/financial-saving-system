@@ -1,76 +1,130 @@
-HEAD
+# Financial Saving System
 
-# financial-saving-system
+Welcome to the Financial Saving System! This project is designed to help users automate their financial planning and management. It provides a user-friendly interface to manage budgets, track expenses, and visualize financial data using charts.
 
-# Getting Started with Create React App
+## Features
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- **User Authentication**: Sign up, log in, and reset password functionality.
+- **Budget Management**: Set your income, allocate budgets to different categories, and track your spending.
+- **Expense Tracking**: Add and manage expenses for each budget category.
+- **Visualization**: View pie charts and bar charts to visualize budget allocation and expenses.
+- **Responsive Design**: Built with Material-UI for a responsive and modern user interface.
 
-## Available Scripts
+## Technologies Used
 
-In the project directory, you can run:
+- **Frontend**: React, Material-UI, Recharts
+- **Backend**: Node.js, Express, MongoDB
+- **State Management**: React Hooks (useState, useEffect)
+- **Routing**: React Router
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Follow these steps to set up the project on your local machine.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+- Node.js and npm installed
+- MongoDB installed and running
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `npm run build`
+1. **Clone the repository**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/your-username/financial-saving-system.git
+   cd financial-saving-system
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install dependencies**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   npm install
+   ```
 
-### `npm run eject`
+3. **Set up the backend**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   - Navigate to the backend directory:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+     ```bash
+     cd backend
+     ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   - Install backend dependencies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+     ```bash
+     npm install
+     ```
 
-## Learn More
+   - Create a `.env` file in the backend directory and add your MongoDB connection string:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+     ```env
+     MONGO_URI=mongodb://localhost:27017/financial-saving-system
+     JWT_SECRET=your_jwt_secret
+     ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   - Start the backend server:
 
-### Code Splitting
+     ```bash
+     npm start
+     ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. **Set up the frontend**
 
-### Analyzing the Bundle Size
+   - Navigate back to the project root directory:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+     ```bash
+     cd ..
+     ```
 
-### Making a Progressive Web App
+   - Start the frontend development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+     ```bash
+     npm start
+     ```
 
-### Advanced Configuration
+5. **Access the application**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   Open your browser and go to `http://localhost:3000` to access the application.
 
-### Deployment
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **`src/`**: Contains the React application code.
+  - **`components/`**: Reusable components like Navbar.
+  - **`pages/`**: Different pages of the application (Home, BudgetManager, ExpenseDetails, etc.).
+- **`backend/`**: Contains the Node.js backend code.
+  - **`models/`**: MongoDB models.
+  - **`routes/`**: API routes.
+  - **`controllers/`**: Logic for handling requests.
+  - **`middleware/`**: Middleware for authentication and error handling.
 
-### `npm run build` fails to minify
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Sign Up/Log In**: Create an account or log in if you already have one.
+2. **Set Income**: Enter your monthly income on the Budget Manager page.
+3. **Allocate Budget**: Allocate a percentage of your income to different categories.
+4. **Add Expenses**: Navigate to the Expenses page to add and manage expenses for each category.
+5. **View Summary**: Use the "View Expense Summary" button to see visualizations of your budget and expenses.
 
-> > > > > > > 817d646 (created budget app)
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Material-UI for the UI components.
+- Recharts for the charting library.
+- MongoDB for the database.
+
+---
+
+Happy budgeting! If you have any questions or run into issues, please feel free to open an issue on GitHub.
